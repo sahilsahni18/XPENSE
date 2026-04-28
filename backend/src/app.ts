@@ -8,7 +8,7 @@ import { requestIdMiddleware } from "./middleware/requestId";
 const app = express();
 
 app.use(helmet());
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "*", "https://xpense-frontend.vercel.app" }));
 app.use(express.json());
 app.use(requestIdMiddleware);
 
